@@ -1,42 +1,39 @@
 #!/usr/bin/env python3
-import numpy as np
+# import numpy as np
 
-np.random.seed(1)
 import tensorflow as tf
-
-# tf.set_random_seed(1)
 from tensorflow import keras
-import csv
+from trainingData import getTrainingData
 import math
-from utils import normalize_input
 
-data = []
-labels = []
+
+(data, types, unlabeled) = getTrainingData()
 
 model = keras.models.Sequential()
-model.add(keras.layers.Dense(64, input_shape=(4,), activation="relu"))
-model.add(keras.layers.Dense(64, activation="relu"))
-model.add(keras.layers.Dense(2))
+model.add(
+    keras.layers.Dense(len(data[0]), input_shape=(len(data[0]),), activation="relu")
+)
+model.add(keras.layers.Dense(len(data[0]), activation="relu"))
+model.add(keras.layers.Dense(len(types[0])))
 
 print(model.summary())
 
 model.compile(
     loss="mse",
-    optimizer=keras.optimizers.SGD(learning_rate=0.1, nesterov=True),
+    optimizer=keras.optimizers.Adam(learning_rate=0.01),
     metrics=["mae"],
 )
-
+train_per = int(len(data) * 0.8)
 history = model.fit(
-    train_data,
-    train_labels,
-    validation_data=(test_data, test_labels),
-    epochs=2000,
+    data[0:train_per],
+    types[0:train_per],
+    validation_data=(data[train_per:], types[train_per:]),
+    epochs=200,
     batch_size=2000,
 )
 
-print(test_data[3:6])
-p = model.predict(test_data[3:6])
-print(test_labels[3:6])
+p = model.predict(unlabeled)
+# print(unlabeled)
 print(p)
 
 import matplotlib.pyplot as plt
