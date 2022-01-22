@@ -6,8 +6,11 @@ from tensorflow import keras
 from trainingData import getTrainingData
 import math
 
+# dataSet = "BNF"  # Conference DBpedia BNF
+# dataSet = "Conference"  # Conference DBpedia BNF
+dataSet = "DBpedia"  # Conference DBpedia BNF
 
-(data, types, unlabeled) = getTrainingData()
+(data, types, unlabeled) = getTrainingData("DBpedia")
 
 model = keras.models.Sequential()
 model.add(

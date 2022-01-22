@@ -3,16 +3,23 @@ from SPARQLWrapper import SPARQLWrapper, JSON, SPARQLWrapper2
 import json
 
 
-def getTrainingData():
+def getAll(query):
+    finalRes = []
+    prevSize = 10000
+    sparql = SPARQLWrapper("http://83.212.77.24:8890/sparql/")
+    sparql.setReturnFormat(JSON)
+    while prevSize == 10000:
+        sparql.setQuery(query + " offset " + str(len(finalRes)))
+        res = sparql.query().convert()
+        finalRes = finalRes + res["results"]["bindings"]
+        prevSize = len(res["results"]["bindings"])
+    return finalRes
+
+
+def getTrainingData(dataSet):
     typePredicate = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
 
-    sparql = SPARQLWrapper("http://83.212.77.24:8890/sparql/")
-
-    # dataSet = "BNF"  # Conference DBpedia BNF
-    # dataSet = "Conference"  # Conference DBpedia BNF
-    dataSet = "DBpedia"  # Conference DBpedia BNF
-    # 1. all trilets
-    sparql.setQuery(
+    tripletsAll = getAll(
         """
         select ?s ?p ?o
         from <http://localhost:8890/"""
@@ -21,11 +28,8 @@ def getTrainingData():
         where { ?s ?p ?o}
     """
     )
-    sparql.setReturnFormat(JSON)
-    tripletsAll = sparql.query().convert()
 
-    # 2. machine learning input layer: all predicates (properties) except type, ordered. Based on predicates of each subject we conclude it s type, ordered
-    sparql.setQuery(
+    allPredicatesButType = getAll(
         """
     SELECT distinct  ?predicate
     from <http://localhost:8890/"""
@@ -38,11 +42,8 @@ def getTrainingData():
     }
     """
     )
-    sparql.setReturnFormat(JSON)
-    allPredicatesButType = sparql.query().convert()
 
-    # 3. types (NN output), machine learning output layer: all objects with predicate ‘type’ ordered. All types ordered. They are the outputs plus one for the ones not classified which will be processed in second phase
-    sparql.setQuery(
+    allTypes = getAll(
         """
         SELECT distinct ?o
         from <http://localhost:8890/"""
@@ -54,21 +55,19 @@ def getTrainingData():
         }
     """
     )
-    sparql.setReturnFormat(JSON)
-    allTypes = sparql.query().convert()
 
     types = []
     predicates = []
 
-    for t in allTypes["results"]["bindings"]:
+    for t in allTypes:
         types.append(t["o"]["value"])
 
-    for p in allPredicatesButType["results"]["bindings"]:
+    for p in allPredicatesButType:
         predicates.append(p["predicate"]["value"])
 
     # dictionary for all subjects
     trainingSet = {}
-    for triplet in tripletsAll["results"]["bindings"]:
+    for triplet in tripletsAll:
         # If this subject isn't in the dict, add it
         if not trainingSet.get(triplet["s"]["value"]):
             trainingSet[triplet["s"]["value"]] = {
