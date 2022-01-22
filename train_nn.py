@@ -4,74 +4,77 @@
 import tensorflow as tf
 from tensorflow import keras
 from trainingData import getTrainingData
+from sklearn.cluster import KMeans
 import math
 
-# dataSet = "BNF"  # Conference DBpedia BNF
-# dataSet = "Conference"  # Conference DBpedia BNF
-dataSet = "DBpedia"  # Conference DBpedia BNF
 
-(data, types, unlabeled) = getTrainingData("DBpedia")
+def train(data, types, unlabeled):
+    model = keras.models.Sequential()
+    model.add(keras.layers.Dense(30, input_shape=(len(data[0]),), activation="relu"))
+    model.add(keras.layers.Dense(len(types[0]), activation="relu"))
+    model.add(keras.layers.Dense(len(types[0])))
 
-model = keras.models.Sequential()
-model.add(
-    keras.layers.Dense(len(data[0]), input_shape=(len(data[0]),), activation="relu")
-)
-model.add(keras.layers.Dense(len(data[0]), activation="relu"))
-model.add(keras.layers.Dense(len(types[0])))
+    print(model.summary())
 
-print(model.summary())
+    model.compile(
+        loss="mse",
+        optimizer=keras.optimizers.Adam(learning_rate=0.01),
+        metrics=["mae"],
+    )
+    train_per = int(len(data) * 0.8)
+    history = model.fit(
+        data[0:train_per],
+        types[0:train_per],
+        validation_data=(data[train_per:], types[train_per:]),
+        epochs=200,
+        batch_size=2000,
+    )
+    model.save(dataSet + "_weights")
+    return predict(data, types, unlabeled, model)
 
-model.compile(
-    loss="mse",
-    optimizer=keras.optimizers.Adam(learning_rate=0.01),
-    metrics=["mae"],
-)
-train_per = int(len(data) * 0.8)
-history = model.fit(
-    data[0:train_per],
-    types[0:train_per],
-    validation_data=(data[train_per:], types[train_per:]),
-    epochs=200,
-    batch_size=2000,
-)
 
-p = model.predict(unlabeled)
-# print(unlabeled)
-print(p)
+def predict(data, types, unlabeled, model):
+    print("data: ", len(data))
+    print("types", len(types))
+    print("unlabeled: ", len(unlabeled))
+    p = model.predict(unlabeled)
+    p = p.tolist()
+    results = [0] * len(unlabeled)
+    unsupervised_instances = []
+    for i in range(len(p)):
+        testp = sorted(p[i], reverse=True)
+        if testp[0] / 2 < testp[1] and testp[0] < 1:
+            unsupervised_instances.append(i)
+        max = 0
+        maxi = 0
+        for index, value in enumerate(p[i]):
+            if value > max:
+                maxi = index
+                max = value
+        results[i] = maxi
+    d = model.predict(data)
+    d = d.tolist()
+    kmeans = KMeans(n_clusters=len(types[0]), n_init=400).fit(d)
+    if len(unsupervised_instances) == 0:
+        return results
+    unsupervised = []
+    for i in unsupervised_instances:
+        unsupervised.append(p[i])
 
-import matplotlib.pyplot as plt
+    y_pred_kmeans = kmeans.predict(unsupervised)
+    for i, y in enumerate(y_pred_kmeans):
+        results[unsupervised_instances[i]] = y
+    return results
 
-history_dict = history.history
-loss_values = history_dict["loss"]
-val_loss_values = history_dict["val_loss"]
-accuracy = history_dict["mae"]
-val_accuracy = history_dict["val_mae"]
 
-epochs = range(1, len(loss_values) + 1)
-fig, ax = plt.subplots(1, 2, figsize=(14, 6))
+dataSet = "Conference"  # Conference DBpedia BNF HistMunic
 
-model.save("model_weights")
-#
-# Plot the model accuracy (MAE) vs Epochs
-#
-ax[0].plot(epochs, accuracy, "bo", label="Training accuracy")
-ax[0].plot(epochs, val_accuracy, "b", label="Validation accuracy")
-ax[0].set_title("Training & Validation Accuracy", fontsize=16)
-ax[0].set_xlabel("Epochs", fontsize=16)
-ax[0].set_ylabel("Accuracy", fontsize=16)
-ax[0].legend()
-#
-# Plot the loss vs Epochs
-#
-ax[1].plot(epochs, loss_values, "bo", label="Training loss")
-ax[1].plot(epochs, val_loss_values, "b", label="Validation loss")
-ax[1].set_title("Training & Validation Loss", fontsize=16)
-ax[1].set_xlabel("Epochs", fontsize=16)
-ax[1].set_ylabel("Loss", fontsize=16)
-ax[1].legend()
-plt.show()
+(data, types, unlabeled) = getTrainingData(dataSet)
 
-# The results would be in the range of 0.98 or 0.02 cause we might #still be left with some error rate(which could've been fixed if we #used a bigger training set or different model parameters.
-# Since we desire binary results, we just round the results using the #round function of Python.
-# The predictions are actually in
-# print([x for x in model.predict(test_data)])
+result = []
+try:
+    model = keras.models.load_model(dataSet + "_weights")
+    result = predict(data, types, unlabeled, model)
+except OSError as e:
+    print(e)
+    result = train(data, types, unlabeled)
