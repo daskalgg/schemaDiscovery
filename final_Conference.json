@@ -1,0 +1,1097 @@
+{
+    "algorithm": "NN & GMM",
+    "dataset": "Conference",
+    "types": [
+        {
+            "type_id": "http://www.w3.org/2002/07/owl#Ontology",
+            "typeName": "owlOntology",
+            "instancesFound": 1,
+            "patterns": [
+                []
+            ],
+            "relations": [],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "file:/C:/Users/kenza/Desktop/dc-2010-complete.owl"
+                }
+            ]
+        },
+        {
+            "type_id": "http://xmlns.com/foaf/0.1/Person",
+            "typeName": "Person",
+            "instancesFound": 115,
+            "patterns": [
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#holdsRole",
+                    "http://swrc.ontoware.org/ontology#affiliation",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://xmlns.com/foaf/0.1/name"
+                ],
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#holdsRole",
+                    "http://swrc.ontoware.org/ontology#affiliation",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://xmlns.com/foaf/0.1/based_near",
+                    "http://xmlns.com/foaf/0.1/name"
+                ],
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#holdsRole",
+                    "http://swrc.ontoware.org/ontology#affiliation",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://www.w3.org/2002/07/owl#sameAs",
+                    "http://xmlns.com/foaf/0.1/based_near",
+                    "http://xmlns.com/foaf/0.1/name"
+                ],
+                [
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://xmlns.com/foaf/0.1/made",
+                    "http://xmlns.com/foaf/0.1/name"
+                ],
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#holdsRole",
+                    "http://swrc.ontoware.org/ontology#affiliation",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://xmlns.com/foaf/0.1/based_near",
+                    "http://xmlns.com/foaf/0.1/made",
+                    "http://xmlns.com/foaf/0.1/name"
+                ],
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#holdsRole",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://www.w3.org/2002/07/owl#sameAs",
+                    "http://xmlns.com/foaf/0.1/name"
+                ],
+                [
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://www.w3.org/2002/07/owl#sameAs",
+                    "http://xmlns.com/foaf/0.1/made",
+                    "http://xmlns.com/foaf/0.1/name"
+                ],
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#holdsRole",
+                    "http://swrc.ontoware.org/ontology#affiliation",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://www.w3.org/2002/07/owl#sameAs",
+                    "http://xmlns.com/foaf/0.1/based_near",
+                    "http://xmlns.com/foaf/0.1/made",
+                    "http://xmlns.com/foaf/0.1/name"
+                ],
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#holdsRole",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://xmlns.com/foaf/0.1/based_near",
+                    "http://xmlns.com/foaf/0.1/name"
+                ],
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#holdsRole",
+                    "http://swrc.ontoware.org/ontology#affiliation",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://www.w3.org/2002/07/owl#sameAs",
+                    "http://xmlns.com/foaf/0.1/name"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Organization",
+                    "relatedInstances": 46
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Presentation",
+                    "relatedInstances": 6
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://swrc.ontoware.org/ontology#InProceedings",
+                    "relatedInstances": 25
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ProgrammeCommitteeMember",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Tutorial-Chair",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "name",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Organization",
+                    "relatedInstances": 46
+                },
+                {
+                    "propertyName": "based_near",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "owlsameAs",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Organization",
+                    "relatedInstances": 1
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.semanticweb.org/person/ron-daniel"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/person/joseph-a-busch"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/person/stuart-a-sutton"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/person/michael-d-crandall"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/person/joseph-t-tennis"
+                }
+            ]
+        },
+        {
+            "type_id": "http://xmlns.com/foaf/0.1/Organization",
+            "typeName": "Organization",
+            "instancesFound": 46,
+            "patterns": [
+                [
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://xmlns.com/foaf/0.1/member",
+                    "http://xmlns.com/foaf/0.1/name"
+                ],
+                [
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://www.w3.org/2002/07/owl#sameAs",
+                    "http://xmlns.com/foaf/0.1/member",
+                    "http://xmlns.com/foaf/0.1/name"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Person",
+                    "relatedInstances": 46
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Presentation",
+                    "relatedInstances": 6
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://swrc.ontoware.org/ontology#InProceedings",
+                    "relatedInstances": 25
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ProgrammeCommitteeMember",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Tutorial-Chair",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "name",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Person",
+                    "relatedInstances": 46
+                },
+                {
+                    "propertyName": "owlsameAs",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Person",
+                    "relatedInstances": 1
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.semanticweb.org/organization/project-performance-corporation"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/organization/university-of-washington"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/organization/syracuse-university"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/organization/sils-metadata-research-center-university-of-north-carolina"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/organization/universidad-nacional-autonoma-de-mexico"
+                }
+            ]
+        },
+        {
+            "type_id": "http://data.semanticweb.org/ns/swc/ontology#Presentation",
+            "typeName": "ontologyPresentation",
+            "instancesFound": 6,
+            "patterns": [
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#heldBy",
+                    "http://data.semanticweb.org/ns/swc/ontology#isRoleAt",
+                    "http://www.w3.org/2000/01/rdf-schema#label"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Person",
+                    "relatedInstances": 6
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Organization",
+                    "relatedInstances": 6
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://swrc.ontoware.org/ontology#InProceedings",
+                    "relatedInstances": 6
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ProgrammeCommitteeMember",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Tutorial-Chair",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "ontologyisRoleAt",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ProgrammeCommitteeMember",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "ontologyisRoleAt",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Tutorial-Chair",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "ontologyheldBy",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ProgrammeCommitteeMember",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "ontologyheldBy",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Tutorial-Chair",
+                    "relatedInstances": 4
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/tutorial/4/tutorial-presenter"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/tutorial/2/tutorial-presenter"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/tutorial/3/tutorial-presenter"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/tutorial/1/tutorial-presenter"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/keynote/1/keynote-presenter"
+                }
+            ]
+        },
+        {
+            "type_id": "http://swrc.ontoware.org/ontology#InProceedings",
+            "typeName": "ontologyInProceedings",
+            "instancesFound": 25,
+            "patterns": [
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#isPartOf",
+                    "http://purl.org/dc/elements/1.1/creator",
+                    "http://purl.org/dc/elements/1.1/title",
+                    "http://purl.org/ontology/bibo/authorList",
+                    "http://swrc.ontoware.org/ontology#abstract",
+                    "http://swrc.ontoware.org/ontology#month",
+                    "http://swrc.ontoware.org/ontology#url",
+                    "http://swrc.ontoware.org/ontology#year",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://xmlns.com/foaf/0.1/maker"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Person",
+                    "relatedInstances": 25
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Organization",
+                    "relatedInstances": 25
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Presentation",
+                    "relatedInstances": 6
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ProgrammeCommitteeMember",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Tutorial-Chair",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "ontologymonth",
+                    "relatedTypeId": "http://swrc.ontoware.org/ontology#Proceedings",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "ontologyyear",
+                    "relatedTypeId": "http://swrc.ontoware.org/ontology#Proceedings",
+                    "relatedInstances": 1
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/paper/posters/A-1002"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/paper/posters/A-1031"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/paper/main/A-1005"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/paper/main/A-1013"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/paper/main/A-1032"
+                }
+            ]
+        },
+        {
+            "type_id": "http://data.semanticweb.org/ns/swc/ontology#ProgrammeCommitteeMember",
+            "typeName": "ontologyProgrammeCommitteeMember",
+            "instancesFound": 1,
+            "patterns": [
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#heldBy",
+                    "http://data.semanticweb.org/ns/swc/ontology#isRoleAt",
+                    "http://www.w3.org/2000/01/rdf-schema#label"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Person",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Organization",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Presentation",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://swrc.ontoware.org/ontology#InProceedings",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Tutorial-Chair",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "ontologyisRoleAt",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Presentation",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "ontologyisRoleAt",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Tutorial-Chair",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "ontologyheldBy",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Presentation",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "ontologyheldBy",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Tutorial-Chair",
+                    "relatedInstances": 1
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/programme-committee-member"
+                }
+            ]
+        },
+        {
+            "type_id": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+            "typeName": "ontologyTutorialEvent",
+            "instancesFound": 4,
+            "patterns": [
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#hasRole",
+                    "http://data.semanticweb.org/ns/swc/ontology#isSubEventOf",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://www.w3.org/2002/12/cal/icaltzd#dtend",
+                    "http://www.w3.org/2002/12/cal/icaltzd#dtstart",
+                    "http://www.w3.org/2002/12/cal/icaltzd#summary",
+                    "http://www.w3.org/2002/12/cal/icaltzd#url",
+                    "http://xmlns.com/foaf/0.1/homepage"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Person",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Organization",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Presentation",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://swrc.ontoware.org/ontology#InProceedings",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ProgrammeCommitteeMember",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Tutorial-Chair",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "homepage",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "homepage",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "icaltzddtend",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "icaltzddtend",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "ontologyisSubEventOf",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "icaltzddtstart",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "icaltzddtstart",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "icaltzdsummary",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "icaltzdurl",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "icaltzdurl",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "ontologyhasRole",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "ontologyhasRole",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 2
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/tutorial/4"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/tutorial/2"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/tutorial/1"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/tutorial/3"
+                }
+            ]
+        },
+        {
+            "type_id": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+            "typeName": "ontologyConferenceEvent",
+            "instancesFound": 1,
+            "patterns": [
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#completeGraph",
+                    "http://data.semanticweb.org/ns/swc/ontology#hasAcronym",
+                    "http://data.semanticweb.org/ns/swc/ontology#hasLogo",
+                    "http://data.semanticweb.org/ns/swc/ontology#hasRelatedDocument",
+                    "http://data.semanticweb.org/ns/swc/ontology#hasRole",
+                    "http://data.semanticweb.org/ns/swc/ontology#isSuperEventOf",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://www.w3.org/2002/12/cal/icaltzd#dtend",
+                    "http://www.w3.org/2002/12/cal/icaltzd#dtstart",
+                    "http://www.w3.org/2002/12/cal/icaltzd#url",
+                    "http://xmlns.com/foaf/0.1/based_near",
+                    "http://xmlns.com/foaf/0.1/homepage"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Person",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Organization",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Presentation",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://swrc.ontoware.org/ontology#InProceedings",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ProgrammeCommitteeMember",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Tutorial-Chair",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "homepage",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "homepage",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "icaltzddtend",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "icaltzddtend",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "icaltzddtstart",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "icaltzddtstart",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "icaltzdurl",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "icaltzdurl",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "ontologyhasRole",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "ontologyhasRole",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "based_near",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Person",
+                    "relatedInstances": 1
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010"
+                }
+            ]
+        },
+        {
+            "type_id": "http://data.semanticweb.org/ns/swc/ontology#Tutorial-Chair",
+            "typeName": "ontologyTutorial-Chair",
+            "instancesFound": 4,
+            "patterns": [
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#heldBy",
+                    "http://data.semanticweb.org/ns/swc/ontology#isRoleAt",
+                    "http://www.w3.org/2000/01/rdf-schema#label"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Person",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Organization",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Presentation",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://swrc.ontoware.org/ontology#InProceedings",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ProgrammeCommitteeMember",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "ontologyisRoleAt",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Presentation",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "ontologyisRoleAt",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ProgrammeCommitteeMember",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "ontologyheldBy",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Presentation",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "ontologyheldBy",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ProgrammeCommitteeMember",
+                    "relatedInstances": 1
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/workshop-convenor"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/program-committee-chair"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/tutorial-chair"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/conference-committee-chair"
+                }
+            ]
+        },
+        {
+            "type_id": "http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk",
+            "typeName": "ontologyKeynoteTalk",
+            "instancesFound": 2,
+            "patterns": [
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#hasRole",
+                    "http://data.semanticweb.org/ns/swc/ontology#isSubEventOf",
+                    "http://www.w3.org/2000/01/rdf-schema#label",
+                    "http://www.w3.org/2002/12/cal/icaltzd#dtend",
+                    "http://www.w3.org/2002/12/cal/icaltzd#dtstart",
+                    "http://www.w3.org/2002/12/cal/icaltzd#summary",
+                    "http://www.w3.org/2002/12/cal/icaltzd#url",
+                    "http://xmlns.com/foaf/0.1/homepage"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Person",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Organization",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Presentation",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://swrc.ontoware.org/ontology#InProceedings",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ProgrammeCommitteeMember",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "rdf-schemalabel",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#Tutorial-Chair",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "homepage",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "homepage",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "icaltzddtend",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "icaltzddtend",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "ontologyisSubEventOf",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "icaltzddtstart",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "icaltzddtstart",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "icaltzdsummary",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "icaltzdurl",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "icaltzdurl",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "ontologyhasRole",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#TutorialEvent",
+                    "relatedInstances": 2
+                },
+                {
+                    "propertyName": "ontologyhasRole",
+                    "relatedTypeId": "http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent",
+                    "relatedInstances": 1
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/keynote/2"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/keynote/1"
+                }
+            ]
+        },
+        {
+            "type_id": "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
+            "typeName": "wgs84_posPoint",
+            "instancesFound": 2,
+            "patterns": [
+                [
+                    "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+                    "http://www.w3.org/2003/01/geo/wgs84_pos#long"
+                ]
+            ],
+            "relations": [],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://bnode1.com"
+                },
+                {
+                    "instance_id": "http://bnode2.com"
+                }
+            ]
+        },
+        {
+            "type_id": "http://swrc.ontoware.org/ontology#Proceedings",
+            "typeName": "ontologyProceedings",
+            "instancesFound": 1,
+            "patterns": [
+                [
+                    "http://data.semanticweb.org/ns/swc/ontology#hasPart",
+                    "http://data.semanticweb.org/ns/swc/ontology#relatedToEvent",
+                    "http://purl.org/ontology/bibo/editorList",
+                    "http://swrc.ontoware.org/ontology#booktitle",
+                    "http://swrc.ontoware.org/ontology#month",
+                    "http://swrc.ontoware.org/ontology#year"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "ontologymonth",
+                    "relatedTypeId": "http://swrc.ontoware.org/ontology#InProceedings",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "ontologyyear",
+                    "relatedTypeId": "http://swrc.ontoware.org/ontology#InProceedings",
+                    "relatedInstances": 1
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/proceedings"
+                }
+            ]
+        },
+        {
+            "type_id": "NewType0",
+            "typeName": "NewType0",
+            "instancesFound": 25,
+            "patterns": [
+                [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2"
+                ],
+                [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1"
+                ],
+                [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3"
+                ],
+                [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_6",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_7",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_8"
+                ],
+                [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3",
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4"
+                ]
+            ],
+            "relations": [],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/paper/posters/A-1002/authorlist"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/paper/main/A-1004/authorlist"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/paper/posters/A-1031/authorlist"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/paper/main/A-1007/authorlist"
+                },
+                {
+                    "instance_id": "http://data.semanticweb.org/conference/dc/2010/paper/main/A-1043/authorlist"
+                }
+            ]
+        }
+    ],
+    "statistics": {
+        "executionTime": 0.6038687229156494,
+        "precisionRecall": 0.9667,
+        "fMeasure": 0.9828,
+        "truePositivePercentage": 1,
+        "falsePositivePercentage": 0
+    }
+}

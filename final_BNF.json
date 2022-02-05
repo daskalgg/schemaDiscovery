@@ -1,0 +1,480 @@
+{
+    "algorithm": "NN & GMM",
+    "dataset": "BNF",
+    "types": [
+        {
+            "type_id": "http://xmlns.com/foaf/0.1/Person",
+            "typeName": "Person",
+            "instancesFound": 5,
+            "patterns": [
+                [
+                    "http://RDVocab.info/ElementsGr2/biographicalInformation",
+                    "http://RDVocab.info/ElementsGr2/countryAssociatedWithThePerson",
+                    "http://RDVocab.info/ElementsGr2/dateOfBirth",
+                    "http://RDVocab.info/ElementsGr2/dateOfDeath",
+                    "http://RDVocab.info/ElementsGr2/languageOfThePerson",
+                    "http://RDVocab.info/ElementsGr2/placeOfBirth",
+                    "http://RDVocab.info/ElementsGr2/placeOfDeath",
+                    "http://purl.org/dc/terms/date",
+                    "http://vocab.org/bio/0.1/Birth",
+                    "http://vocab.org/bio/0.1/Death",
+                    "http://xmlns.com/foaf/0.1/birthday",
+                    "http://xmlns.com/foaf/0.1/familyName",
+                    "http://xmlns.com/foaf/0.1/gender",
+                    "http://xmlns.com/foaf/0.1/givenName",
+                    "http://xmlns.com/foaf/0.1/name",
+                    "http://xmlns.com/foaf/0.1/page"
+                ],
+                [
+                    "http://RDVocab.info/ElementsGr2/biographicalInformation",
+                    "http://RDVocab.info/ElementsGr2/countryAssociatedWithThePerson",
+                    "http://RDVocab.info/ElementsGr2/dateOfBirth",
+                    "http://RDVocab.info/ElementsGr2/dateOfDeath",
+                    "http://RDVocab.info/ElementsGr2/fieldOfActivityOfThePerson",
+                    "http://RDVocab.info/ElementsGr2/languageOfThePerson",
+                    "http://RDVocab.info/ElementsGr2/placeOfBirth",
+                    "http://RDVocab.info/ElementsGr2/placeOfDeath",
+                    "http://purl.org/dc/terms/date",
+                    "http://vocab.org/bio/0.1/Birth",
+                    "http://vocab.org/bio/0.1/Death",
+                    "http://www.w3.org/2002/07/owl#sameAs",
+                    "http://xmlns.com/foaf/0.1/birthday",
+                    "http://xmlns.com/foaf/0.1/depiction",
+                    "http://xmlns.com/foaf/0.1/familyName",
+                    "http://xmlns.com/foaf/0.1/gender",
+                    "http://xmlns.com/foaf/0.1/givenName",
+                    "http://xmlns.com/foaf/0.1/name",
+                    "http://xmlns.com/foaf/0.1/page"
+                ],
+                [
+                    "http://RDVocab.info/ElementsGr2/biographicalInformation",
+                    "http://RDVocab.info/ElementsGr2/countryAssociatedWithThePerson",
+                    "http://RDVocab.info/ElementsGr2/dateOfBirth",
+                    "http://RDVocab.info/ElementsGr2/dateOfDeath",
+                    "http://RDVocab.info/ElementsGr2/languageOfThePerson",
+                    "http://RDVocab.info/ElementsGr2/placeOfBirth",
+                    "http://purl.org/dc/terms/date",
+                    "http://vocab.org/bio/0.1/Birth",
+                    "http://vocab.org/bio/0.1/Death",
+                    "http://www.w3.org/2002/07/owl#sameAs",
+                    "http://xmlns.com/foaf/0.1/birthday",
+                    "http://xmlns.com/foaf/0.1/familyName",
+                    "http://xmlns.com/foaf/0.1/gender",
+                    "http://xmlns.com/foaf/0.1/givenName",
+                    "http://xmlns.com/foaf/0.1/name",
+                    "http://xmlns.com/foaf/0.1/page"
+                ],
+                [
+                    "http://RDVocab.info/ElementsGr2/biographicalInformation",
+                    "http://RDVocab.info/ElementsGr2/countryAssociatedWithThePerson",
+                    "http://RDVocab.info/ElementsGr2/dateOfBirth",
+                    "http://RDVocab.info/ElementsGr2/dateOfDeath",
+                    "http://RDVocab.info/ElementsGr2/languageOfThePerson",
+                    "http://RDVocab.info/ElementsGr2/placeOfBirth",
+                    "http://RDVocab.info/ElementsGr2/placeOfDeath",
+                    "http://purl.org/dc/terms/date",
+                    "http://vocab.org/bio/0.1/Birth",
+                    "http://vocab.org/bio/0.1/Death",
+                    "http://www.w3.org/2002/07/owl#sameAs",
+                    "http://xmlns.com/foaf/0.1/birthday",
+                    "http://xmlns.com/foaf/0.1/familyName",
+                    "http://xmlns.com/foaf/0.1/gender",
+                    "http://xmlns.com/foaf/0.1/givenName",
+                    "http://xmlns.com/foaf/0.1/name",
+                    "http://xmlns.com/foaf/0.1/page"
+                ],
+                [
+                    "http://RDVocab.info/ElementsGr2/biographicalInformation",
+                    "http://RDVocab.info/ElementsGr2/dateOfBirth",
+                    "http://RDVocab.info/ElementsGr2/dateOfDeath",
+                    "http://RDVocab.info/ElementsGr2/languageOfThePerson",
+                    "http://purl.org/dc/terms/date",
+                    "http://vocab.org/bio/0.1/Birth",
+                    "http://vocab.org/bio/0.1/Death",
+                    "http://www.w3.org/2002/07/owl#sameAs",
+                    "http://xmlns.com/foaf/0.1/familyName",
+                    "http://xmlns.com/foaf/0.1/gender",
+                    "http://xmlns.com/foaf/0.1/page"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "date",
+                    "relatedTypeId": "http://rdvocab.info/uri/schema/FRBRentitiesRDA/Manifestation",
+                    "relatedInstances": 5
+                },
+                {
+                    "propertyName": "date",
+                    "relatedTypeId": "http://rdvocab.info/uri/schema/FRBRentitiesRDA/Work",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "owlsameAs",
+                    "relatedTypeId": "http://www.w3.org/2004/02/skos/core#Concept",
+                    "relatedInstances": 2
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb10303514g#foaf:Person"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb10269486k#foaf:Person"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb102316737#foaf:Person"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb103089692#foaf:Person"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb10190409d#foaf:Person"
+                }
+            ]
+        },
+        {
+            "type_id": "http://www.w3.org/2004/02/skos/core#Concept",
+            "typeName": "coreConcept",
+            "instancesFound": 7,
+            "patterns": [
+                [
+                    "http://data.bnf.fr/ontology/bnf-onto/FRBNF",
+                    "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                    "http://www.w3.org/2004/02/skos/core#altLabel",
+                    "http://www.w3.org/2004/02/skos/core#editorialNote",
+                    "http://www.w3.org/2004/02/skos/core#prefLabel",
+                    "http://xmlns.com/foaf/0.1/focus"
+                ],
+                [
+                    "http://data.bnf.fr/ontology/bnf-onto/FRBNF",
+                    "http://isni.org/ontology#identifierValid",
+                    "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                    "http://www.w3.org/2002/07/owl#sameAs",
+                    "http://www.w3.org/2004/02/skos/core#altLabel",
+                    "http://www.w3.org/2004/02/skos/core#editorialNote",
+                    "http://www.w3.org/2004/02/skos/core#prefLabel",
+                    "http://xmlns.com/foaf/0.1/focus"
+                ],
+                [
+                    "http://data.bnf.fr/ontology/bnf-onto/FRBNF",
+                    "http://isni.org/ontology#identifierValid",
+                    "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                    "http://www.w3.org/2002/07/owl#sameAs",
+                    "http://www.w3.org/2004/02/skos/core#altLabel",
+                    "http://www.w3.org/2004/02/skos/core#prefLabel",
+                    "http://xmlns.com/foaf/0.1/focus"
+                ],
+                [
+                    "http://data.bnf.fr/ontology/bnf-onto/FRBNF",
+                    "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                    "http://www.w3.org/2004/02/skos/core#prefLabel",
+                    "http://xmlns.com/foaf/0.1/focus"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "rdf-schemaseeAlso",
+                    "relatedTypeId": "http://rdvocab.info/uri/schema/FRBRentitiesRDA/Manifestation",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "owlsameAs",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Person",
+                    "relatedInstances": 2
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb119560172"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb11957457n"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb119387788"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb11952593k"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb119558489"
+                }
+            ]
+        },
+        {
+            "type_id": "http://rdvocab.info/uri/schema/FRBRentitiesRDA/Manifestation",
+            "typeName": "Manifestation",
+            "instancesFound": 5,
+            "patterns": [
+                [
+                    "http://RDVocab.info/Elements/Note",
+                    "http://RDVocab.info/Elements/dateOfPublication",
+                    "http://RDVocab.info/Elements/placeOfPublication",
+                    "http://RDVocab.info/Elements/publishersName",
+                    "http://data.bnf.fr/ontology/bnf-onto/identifiantBP16",
+                    "http://data.bnf.fr/ontology/bnf-onto/identifiantRenouard",
+                    "http://data.bnf.fr/vocabulary/roles/r3260",
+                    "http://id.loc.gov/vocabulary/relators/aut",
+                    "http://id.loc.gov/vocabulary/relators/bsl",
+                    "http://purl.org/dc/terms/date",
+                    "http://purl.org/dc/terms/description",
+                    "http://purl.org/dc/terms/publisher",
+                    "http://purl.org/dc/terms/title",
+                    "http://rdvocab.info/RDARelationshipsWEMI/expressionManifested",
+                    "http://rdvocab.info/RDARelationshipsWEMI/workManifested",
+                    "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+                ],
+                [
+                    "http://RDVocab.info/Elements/Note",
+                    "http://RDVocab.info/Elements/dateOfPublication",
+                    "http://RDVocab.info/Elements/placeOfPublication",
+                    "http://RDVocab.info/Elements/publishersName",
+                    "http://RDVocab.info/Elements/sourceConsulted",
+                    "http://data.bnf.fr/ontology/bnf-onto/identifiantBP16",
+                    "http://data.bnf.fr/ontology/bnf-onto/identifiantRenouard",
+                    "http://data.bnf.fr/vocabulary/roles/r3260",
+                    "http://id.loc.gov/vocabulary/relators/aut",
+                    "http://id.loc.gov/vocabulary/relators/bsl",
+                    "http://purl.org/dc/terms/date",
+                    "http://purl.org/dc/terms/description",
+                    "http://purl.org/dc/terms/publisher",
+                    "http://purl.org/dc/terms/title",
+                    "http://rdvocab.info/RDARelationshipsWEMI/expressionManifested",
+                    "http://rdvocab.info/RDARelationshipsWEMI/workManifested"
+                ],
+                [
+                    "http://RDVocab.info/Elements/Note",
+                    "http://RDVocab.info/Elements/dateOfPublication",
+                    "http://RDVocab.info/Elements/placeOfPublication",
+                    "http://RDVocab.info/Elements/publishersName",
+                    "http://data.bnf.fr/ontology/bnf-onto/identifiantBP16",
+                    "http://data.bnf.fr/ontology/bnf-onto/identifiantRenouard",
+                    "http://data.bnf.fr/vocabulary/roles/r3260",
+                    "http://id.loc.gov/vocabulary/relators/aut",
+                    "http://id.loc.gov/vocabulary/relators/bsl",
+                    "http://purl.org/dc/terms/date",
+                    "http://purl.org/dc/terms/description",
+                    "http://purl.org/dc/terms/publisher",
+                    "http://purl.org/dc/terms/title",
+                    "http://rdvocab.info/RDARelationshipsWEMI/expressionManifested",
+                    "http://rdvocab.info/RDARelationshipsWEMI/workManifested"
+                ],
+                [
+                    "http://RDVocab.info/Elements/dateOfPublication",
+                    "http://RDVocab.info/Elements/placeOfPublication",
+                    "http://RDVocab.info/Elements/publishersName",
+                    "http://data.bnf.fr/ontology/bnf-onto/identifiantBP16",
+                    "http://data.bnf.fr/ontology/bnf-onto/identifiantRenouard",
+                    "http://data.bnf.fr/vocabulary/roles/r3260",
+                    "http://id.loc.gov/vocabulary/relators/aut",
+                    "http://id.loc.gov/vocabulary/relators/bsl",
+                    "http://purl.org/dc/terms/date",
+                    "http://purl.org/dc/terms/description",
+                    "http://purl.org/dc/terms/publisher",
+                    "http://purl.org/dc/terms/title",
+                    "http://rdvocab.info/RDARelationshipsWEMI/expressionManifested",
+                    "http://rdvocab.info/RDARelationshipsWEMI/workManifested"
+                ],
+                [
+                    "http://RDVocab.info/Elements/Note",
+                    "http://RDVocab.info/Elements/dateOfPublication",
+                    "http://RDVocab.info/Elements/placeOfPublication",
+                    "http://RDVocab.info/Elements/publishersName",
+                    "http://data.bnf.fr/ontology/bnf-onto/identifiantBP16",
+                    "http://data.bnf.fr/ontology/bnf-onto/identifiantRenouard",
+                    "http://data.bnf.fr/vocabulary/roles/r3260",
+                    "http://id.loc.gov/vocabulary/relators/bsl",
+                    "http://purl.org/dc/terms/date",
+                    "http://purl.org/dc/terms/description",
+                    "http://purl.org/dc/terms/publisher",
+                    "http://purl.org/dc/terms/title",
+                    "http://rdvocab.info/RDARelationshipsWEMI/workManifested"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "rdf-schemaseeAlso",
+                    "relatedTypeId": "http://www.w3.org/2004/02/skos/core#Concept",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "title",
+                    "relatedTypeId": "http://rdvocab.info/uri/schema/FRBRentitiesRDA/Work",
+                    "relatedInstances": 5
+                },
+                {
+                    "propertyName": "description",
+                    "relatedTypeId": "http://rdvocab.info/uri/schema/FRBRentitiesRDA/Work",
+                    "relatedInstances": 5
+                },
+                {
+                    "propertyName": "aut",
+                    "relatedTypeId": "http://rdvocab.info/uri/schema/FRBRentitiesRDA/Expression",
+                    "relatedInstances": 1
+                },
+                {
+                    "propertyName": "date",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Person",
+                    "relatedInstances": 5
+                },
+                {
+                    "propertyName": "date",
+                    "relatedTypeId": "http://rdvocab.info/uri/schema/FRBRentitiesRDA/Work",
+                    "relatedInstances": 4
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://bp16.bnf.fr/ark:/12148/cb41873609x/"
+                },
+                {
+                    "instance_id": "http://bp16.bnf.fr/ark:/12148/cb41875712k/"
+                },
+                {
+                    "instance_id": "http://bp16.bnf.fr/ark:/12148/cb418784939/"
+                },
+                {
+                    "instance_id": "http://bp16.bnf.fr/ark:/12148/cb418748714/"
+                },
+                {
+                    "instance_id": "http://bp16.bnf.fr/ark:/12148/cb41877832z/"
+                }
+            ]
+        },
+        {
+            "type_id": "http://rdvocab.info/uri/schema/FRBRentitiesRDA/Expression",
+            "typeName": "Expression",
+            "instancesFound": 6,
+            "patterns": [
+                [
+                    "http://purl.org/dc/terms/contributor"
+                ],
+                [
+                    "http://data.bnf.fr/vocabulary/roles/r70",
+                    "http://id.loc.gov/vocabulary/relators/aut",
+                    "http://purl.org/dc/terms/contributor"
+                ],
+                [
+                    "http://data.bnf.fr/vocabulary/roles/r360",
+                    "http://id.loc.gov/vocabulary/relators/edt",
+                    "http://purl.org/dc/terms/contributor"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "aut",
+                    "relatedTypeId": "http://rdvocab.info/uri/schema/FRBRentitiesRDA/Manifestation",
+                    "relatedInstances": 1
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb302524548#frbr:Expression"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb31514542k#frbr:Expression"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb31514549k#frbr:Expression"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb315510010#frbr:Expression"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb31514547k#frbr:Expression"
+                }
+            ]
+        },
+        {
+            "type_id": "http://rdvocab.info/uri/schema/FRBRentitiesRDA/Work",
+            "typeName": "Work",
+            "instancesFound": 8,
+            "patterns": [
+                [
+                    "http://purl.org/dc/terms/creator",
+                    "http://purl.org/dc/terms/description",
+                    "http://purl.org/dc/terms/language",
+                    "http://purl.org/dc/terms/subject",
+                    "http://purl.org/dc/terms/title",
+                    "http://www.w3.org/2000/01/rdf-schema#label"
+                ],
+                [
+                    "http://RDVocab.info/Elements/dateOfWork",
+                    "http://data.bnf.fr/ontology/bnf-onto/subject",
+                    "http://purl.org/dc/terms/creator",
+                    "http://purl.org/dc/terms/date",
+                    "http://purl.org/dc/terms/description",
+                    "http://purl.org/dc/terms/language",
+                    "http://purl.org/dc/terms/subject",
+                    "http://purl.org/dc/terms/title",
+                    "http://www.w3.org/2000/01/rdf-schema#label"
+                ],
+                [
+                    "http://purl.org/dc/terms/creator",
+                    "http://purl.org/dc/terms/subject",
+                    "http://purl.org/dc/terms/title",
+                    "http://www.w3.org/2000/01/rdf-schema#label"
+                ],
+                [
+                    "http://RDVocab.info/Elements/dateOfWork",
+                    "http://data.bnf.fr/ontology/bnf-onto/subject",
+                    "http://purl.org/dc/terms/creator",
+                    "http://purl.org/dc/terms/description",
+                    "http://purl.org/dc/terms/language",
+                    "http://purl.org/dc/terms/subject",
+                    "http://purl.org/dc/terms/title",
+                    "http://www.w3.org/2000/01/rdf-schema#label"
+                ],
+                [
+                    "http://purl.org/dc/terms/creator"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "title",
+                    "relatedTypeId": "http://rdvocab.info/uri/schema/FRBRentitiesRDA/Manifestation",
+                    "relatedInstances": 5
+                },
+                {
+                    "propertyName": "description",
+                    "relatedTypeId": "http://rdvocab.info/uri/schema/FRBRentitiesRDA/Manifestation",
+                    "relatedInstances": 5
+                },
+                {
+                    "propertyName": "date",
+                    "relatedTypeId": "http://xmlns.com/foaf/0.1/Person",
+                    "relatedInstances": 4
+                },
+                {
+                    "propertyName": "date",
+                    "relatedTypeId": "http://rdvocab.info/uri/schema/FRBRentitiesRDA/Manifestation",
+                    "relatedInstances": 4
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb11957457n#frbr:Work"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb11952593k#frbr:Work"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb119455488#frbr:Work"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb11950363m#frbr:Work"
+                },
+                {
+                    "instance_id": "http://data.bnf.fr/ark:/12148/cb11946741n#frbr:Work"
+                }
+            ]
+        }
+    ],
+    "statistics": {
+        "executionTime": 0.4224274158477783,
+        "precisionRecall": 1,
+        "fMeasure": 1,
+        "truePositivePercentage": 1,
+        "falsePositivePercentage": 0
+    }
+}

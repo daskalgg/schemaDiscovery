@@ -1,0 +1,869 @@
+{
+    "algorithm": "NN & GMM",
+    "dataset": "HistMunic",
+    "types": [
+        {
+            "type_id": "http://www.w3.org/2004/02/skos/core#Concept",
+            "typeName": "coreConcept",
+            "instancesFound": 17,
+            "patterns": [
+                [
+                    "http://www.w3.org/2004/02/skos/core#altLabel",
+                    "http://www.w3.org/2004/02/skos/core#notation",
+                    "http://www.w3.org/2004/02/skos/core#prefLabel"
+                ],
+                [
+                    "http://www.w3.org/2004/02/skos/core#notation",
+                    "http://www.w3.org/2004/02/skos/core#prefLabel"
+                ],
+                [
+                    "http://www.w3.org/2004/02/skos/core#notation",
+                    "http://www.w3.org/2004/02/skos/core#note",
+                    "http://www.w3.org/2004/02/skos/core#prefLabel"
+                ]
+            ],
+            "relations": [],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://data.admin.ch/id/code/ech-0071/11"
+                },
+                {
+                    "instance_id": "http://data.admin.ch/id/code/ech-0071/12"
+                },
+                {
+                    "instance_id": "http://data.admin.ch/id/code/ech-0071/13"
+                },
+                {
+                    "instance_id": "http://data.admin.ch/id/code/ech-0071/15"
+                },
+                {
+                    "instance_id": "http://data.admin.ch/id/code/ech-0071/16"
+                }
+            ]
+        },
+        {
+            "type_id": "https://gont.ch/MunicipalityVersion",
+            "typeName": "MunicipalityVersion",
+            "instancesFound": 5615,
+            "patterns": [
+                [
+                    "http://purl.org/dc/terms/identifier",
+                    "https://gont.ch/abolitionEvent",
+                    "https://gont.ch/abolitionMode",
+                    "https://gont.ch/admissionEvent",
+                    "https://gont.ch/admissionMode",
+                    "https://gont.ch/canton",
+                    "https://gont.ch/district",
+                    "https://gont.ch/id",
+                    "https://gont.ch/longName",
+                    "https://gont.ch/municipality",
+                    "https://gont.ch/shortName"
+                ],
+                [
+                    "http://purl.org/dc/terms/identifier",
+                    "https://gont.ch/admissionEvent",
+                    "https://gont.ch/admissionMode",
+                    "https://gont.ch/canton",
+                    "https://gont.ch/district",
+                    "https://gont.ch/id",
+                    "https://gont.ch/longName",
+                    "https://gont.ch/municipality",
+                    "https://gont.ch/shortName"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictChangeEvent",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/MunicipalityChangeEvent",
+                    "relatedInstances": 2455
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/Municipality",
+                    "relatedInstances": 3415
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictEntity",
+                    "relatedInstances": 253
+                },
+                {
+                    "propertyName": "longName",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "longName",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "shortName",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictChangeEvent",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/MunicipalityChangeEvent",
+                    "relatedInstances": 2455
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/Municipality",
+                    "relatedInstances": 3415
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictEntity",
+                    "relatedInstances": 253
+                },
+                {
+                    "propertyName": "canton",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "admissionMode",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "abolitionMode",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 135
+                },
+                {
+                    "propertyName": "abolitionEvent",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 135
+                },
+                {
+                    "propertyName": "admissionEvent",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 99
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://classifications.data.admin.ch/municipalityversion/10001"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/municipalityversion/10002"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/municipalityversion/10003"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/municipalityversion/10004"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/municipalityversion/10005"
+                }
+            ]
+        },
+        {
+            "type_id": "https://gont.ch/DistrictChangeEvent",
+            "typeName": "DistrictChangeEvent",
+            "instancesFound": 55,
+            "patterns": [
+                [
+                    "http://purl.org/dc/terms/identifier",
+                    "https://gont.ch/date",
+                    "https://gont.ch/id"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/MunicipalityChangeEvent",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/Municipality",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictEntity",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/MunicipalityChangeEvent",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/Municipality",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictEntity",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "date",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "date",
+                    "relatedTypeId": "https://gont.ch/MunicipalityChangeEvent",
+                    "relatedInstances": 55
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://classifications.data.admin.ch/event/hgv/district/100"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/event/hgv/district/119"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/event/hgv/district/117"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/event/hgv/district/123"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/event/hgv/district/122"
+                }
+            ]
+        },
+        {
+            "type_id": "https://gont.ch/Canton",
+            "typeName": "Canton",
+            "instancesFound": 26,
+            "patterns": [
+                [
+                    "http://purl.org/dc/terms/identifier",
+                    "https://gont.ch/cantonAbbreviation",
+                    "https://gont.ch/date",
+                    "https://gont.ch/id",
+                    "https://gont.ch/longName"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictChangeEvent",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/MunicipalityChangeEvent",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/Municipality",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictEntity",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "longName",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "longName",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictChangeEvent",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/MunicipalityChangeEvent",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/Municipality",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictEntity",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "date",
+                    "relatedTypeId": "https://gont.ch/DistrictChangeEvent",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "date",
+                    "relatedTypeId": "https://gont.ch/MunicipalityChangeEvent",
+                    "relatedInstances": 26
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://classifications.data.admin.ch/canton/ZH"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/canton/BE"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/canton/LU"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/canton/UR"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/canton/SZ"
+                }
+            ]
+        },
+        {
+            "type_id": "https://gont.ch/MunicipalityChangeEvent",
+            "typeName": "MunicipalityChangeEvent",
+            "instancesFound": 2455,
+            "patterns": [
+                [
+                    "http://purl.org/dc/terms/identifier",
+                    "https://gont.ch/date",
+                    "https://gont.ch/id"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 2455
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictChangeEvent",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/Municipality",
+                    "relatedInstances": 2455
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictEntity",
+                    "relatedInstances": 253
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 2455
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictChangeEvent",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/Municipality",
+                    "relatedInstances": 2455
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictEntity",
+                    "relatedInstances": 253
+                },
+                {
+                    "propertyName": "date",
+                    "relatedTypeId": "https://gont.ch/DistrictChangeEvent",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "date",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://classifications.data.admin.ch/event/hgv/municipality/1000"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/event/hgv/municipality/1001"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/event/hgv/municipality/1002"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/event/hgv/municipality/1003"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/event/hgv/municipality/1004"
+                }
+            ]
+        },
+        {
+            "type_id": "https://gont.ch/DistrictEntityVersion",
+            "typeName": "DistrictEntityVersion",
+            "instancesFound": 296,
+            "patterns": [
+                [
+                    "http://purl.org/dc/terms/identifier",
+                    "https://gont.ch/abolitionEvent",
+                    "https://gont.ch/abolitionMode",
+                    "https://gont.ch/admissionMode",
+                    "https://gont.ch/canton",
+                    "https://gont.ch/id",
+                    "https://gont.ch/longName",
+                    "https://gont.ch/shortName"
+                ],
+                [
+                    "http://purl.org/dc/terms/identifier",
+                    "https://gont.ch/admissionMode",
+                    "https://gont.ch/canton",
+                    "https://gont.ch/id",
+                    "https://gont.ch/longName",
+                    "https://gont.ch/shortName"
+                ],
+                [
+                    "http://purl.org/dc/terms/identifier",
+                    "https://gont.ch/abolitionEvent",
+                    "https://gont.ch/abolitionMode",
+                    "https://gont.ch/admissionEvent",
+                    "https://gont.ch/admissionMode",
+                    "https://gont.ch/canton",
+                    "https://gont.ch/id",
+                    "https://gont.ch/longName",
+                    "https://gont.ch/shortName"
+                ],
+                [
+                    "http://purl.org/dc/terms/identifier",
+                    "https://gont.ch/admissionEvent",
+                    "https://gont.ch/admissionMode",
+                    "https://gont.ch/canton",
+                    "https://gont.ch/id",
+                    "https://gont.ch/longName",
+                    "https://gont.ch/shortName"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictChangeEvent",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/MunicipalityChangeEvent",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/Municipality",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictEntity",
+                    "relatedInstances": 253
+                },
+                {
+                    "propertyName": "longName",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "longName",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "shortName",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictChangeEvent",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/MunicipalityChangeEvent",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/Municipality",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictEntity",
+                    "relatedInstances": 253
+                },
+                {
+                    "propertyName": "canton",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "admissionMode",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "abolitionMode",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 135
+                },
+                {
+                    "propertyName": "abolitionEvent",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 135
+                },
+                {
+                    "propertyName": "admissionEvent",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 99
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://classifications.data.admin.ch/districtentryversion/10001"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/districtentryversion/10002"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/districtentryversion/10003"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/districtentryversion/10004"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/districtentryversion/10005"
+                }
+            ]
+        },
+        {
+            "type_id": "https://gont.ch/Municipality",
+            "typeName": "Municipality",
+            "instancesFound": 3415,
+            "patterns": [
+                [
+                    "http://purl.org/dc/terms/identifier",
+                    "http://www.w3.org/2002/07/owl#sameAs",
+                    "https://gont.ch/id",
+                    "https://gont.ch/municipalityVersion"
+                ],
+                [
+                    "http://purl.org/dc/terms/identifier",
+                    "https://gont.ch/id",
+                    "https://gont.ch/municipalityVersion"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 3415
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictChangeEvent",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/MunicipalityChangeEvent",
+                    "relatedInstances": 2455
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictEntity",
+                    "relatedInstances": 253
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 3415
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictChangeEvent",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/MunicipalityChangeEvent",
+                    "relatedInstances": 2455
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 296
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictEntity",
+                    "relatedInstances": 253
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://classifications.data.admin.ch/municipality/3501"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/municipality/3403"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/municipality/3523"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/municipality/3522"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/municipality/3521"
+                }
+            ]
+        },
+        {
+            "type_id": "https://gont.ch/DistrictEntity",
+            "typeName": "DistrictEntity",
+            "instancesFound": 253,
+            "patterns": [
+                [
+                    "http://purl.org/dc/terms/identifier",
+                    "https://gont.ch/districtVersion",
+                    "https://gont.ch/id"
+                ]
+            ],
+            "relations": [
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 253
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictChangeEvent",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/MunicipalityChangeEvent",
+                    "relatedInstances": 253
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 253
+                },
+                {
+                    "propertyName": "identifier",
+                    "relatedTypeId": "https://gont.ch/Municipality",
+                    "relatedInstances": 253
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/MunicipalityVersion",
+                    "relatedInstances": 253
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictChangeEvent",
+                    "relatedInstances": 55
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/Canton",
+                    "relatedInstances": 26
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/MunicipalityChangeEvent",
+                    "relatedInstances": 253
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/DistrictEntityVersion",
+                    "relatedInstances": 253
+                },
+                {
+                    "propertyName": "id",
+                    "relatedTypeId": "https://gont.ch/Municipality",
+                    "relatedInstances": 253
+                }
+            ],
+            "fiveExampleInstances": [
+                {
+                    "instance_id": "http://classifications.data.admin.ch/district/2001"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/district/2106"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/district/2105"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/district/2104"
+                },
+                {
+                    "instance_id": "http://classifications.data.admin.ch/district/2103"
+                }
+            ]
+        }
+    ],
+    "statistics": {
+        "executionTime": 0.41815829277038574,
+        "precisionRecall": 0.8934,
+        "fMeasure": 0.8934,
+        "truePositivePercentage": 0.895,
+        "falsePositivePercentage": 0.105
+    }
+}
