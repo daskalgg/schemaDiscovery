@@ -8090,7 +8090,8 @@
     ],
     "statistics": {
         "executionTime": 8.18436574935913,
-        "precisionRecall": 1,
+        "recall": 1,
+        "precision": 1,
         "fMeasure": 1,
         "truePositivePercentage": 1,
         "falsePositivePercentage": 0

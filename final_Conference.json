@@ -1089,7 +1089,8 @@
     ],
     "statistics": {
         "executionTime": 0.6038687229156494,
-        "precisionRecall": 0.9667,
+        "recall": 0.9667,
+        "precision": 1.0,
         "fMeasure": 0.9828,
         "truePositivePercentage": 1,
         "falsePositivePercentage": 0

@@ -52,10 +52,11 @@ def train(data, types, unlabeled):
         optimizer=keras.optimizers.Adam(learning_rate=0.01),
         metrics=[
             "mae",
-            # recall_m,
-            # f1_m,
-            # keras.metrics.TruePositives(),
-            # keras.metrics.FalsePositives(),
+            recall_m,
+            f1_m,
+            keras.metrics.TruePositives(),
+            keras.metrics.FalsePositives(),
+            keras.metrics.Precision(),
         ],
     )
     train_per = int(len(data) * 0.8)
@@ -173,7 +174,7 @@ def getFiveInstances(instances):
     return result
 
 
-dataSet = "HistMunic"  # Conference DBpedia BNF HistMunic
+dataSet = "BNF"  # Conference DBpedia BNF HistMunic
 
 (
     data,
